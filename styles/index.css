@@ -1,0 +1,41 @@
+:root{
+    --primary-color: #627ea6;
+    --second-color: #55d3d2;
+    --third-color: #ffc505;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--second-color);
+    font-family: 'roboto' , sans-serif;
+}
+
+.logo{
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid var(--second-color);
+}
+header span{
+    color: var(--third-color);
+}
+header h2{
+    display: flex;
+}

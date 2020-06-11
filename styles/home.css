@@ -1,0 +1,81 @@
+.page-home{
+    height: 100vh;
+    background: url("../assets/2887079.jpg") no-repeat;
+    background-size: 700px;
+    background-position: 43vw 90px;
+}
+
+.page-home .content{
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page-home header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.page-home header a{
+    color: var(--second-color);
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.page-home header span{
+    color: var(--third-color);
+    margin-right: 16px;
+    display: flex;
+}
+
+.page-home main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: 530px;
+    height: 200px;
+}
+
+.page-home main h1{
+    font-size: 54px;
+    margin-top: -70px;
+}
+
+.page-home main p{
+    font-size: 25px;
+    line-height: 38px;
+    margin-top: 30px;
+} 
+
+.page-home main a{
+    display: flex;
+    width: 65%;
+    max-width: 360px;
+    height: 65px;
+    margin-top: 40px;
+    background-color: var(--third-color);
+    border-radius: 10px;
+    transition: 500ms;
+
+    align-items: center;
+}
+
+.page-home main a:hover{
+    background-color: #e3ab28;
+}
+
+.page-home main a strong{
+    flex: 1;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+

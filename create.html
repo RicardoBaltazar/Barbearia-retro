@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/create.css">
+    <title>Doe Mídias</title>
+</head>
+<body>
+    
+    <div class="home-create">
+
+            <header>
+                <!--
+                <img src="" alt="logotipo">
+                -->
+                <h2 class="logo">media<span>Donate</span></h2>
+
+                <a href="./index.html">
+                    <span>&#9194;</span> Voltar para home
+                </a>
+            </header>
+
+
+            <form action="">
+                <h1>Cadastro do ponto de doação</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Dados do local</h2>
+                    </legend>
+
+                    <div class="field">
+                        <label for="name">Nome do ponto</label>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="address">Endereço</label>
+                            <input type="text" name="address" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="address2">Complemento</label>
+                            <input type="text" name="address2">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="state">Estado</label>
+                            <select name="uf">
+                                <option value="">Selecione o estado</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city">
+                                <option value="">Selecione a cidade</option>
+                            </select>
+
+                            <input type="hidden" name="state">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <h2>Indique os itens quie deseja doar</h2>
+                    </legend>
+                    <div class="grid-items">
+
+                        <li id="li1">
+                            <span>Dvs's</span>
+                        </li>
+
+                        <li id="li2">
+                            Vinis
+                        </li>
+
+                        <li id="li3">
+                            jogos
+                        </li>
+
+                        <li id="li4">
+                            <span>Aparelhos</span>
+                        </li>
+                    </div>
+                    <input type="hidden" name="items">
+                </fieldset>
+
+                <button type="submit">Cadastrar Ponto</button>
+            </form>
+    </div>
+
+</body>
+</html>
