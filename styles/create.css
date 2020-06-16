@@ -8,7 +8,7 @@
 }
 
 .home-create header{
-    margin-top: 40px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,7 @@ form h1{
 }
 
 form fieldset{
-    margin-top: 15px;
+    margin-top: 25px;
     border: 0;
 }
 
@@ -83,6 +83,7 @@ form input, form select{
 form label{
     font-size: 16px;
     margin-bottom: 5px;
+    color: rgb(88, 87, 87);
 }
 
 form .field-group .field + .field{
@@ -98,9 +99,9 @@ form .field-group .field + .field{
 .grid-items li{
     list-style-type: none;
     background-color: #f5f5f5;
-    border: 2px solid var(--third-color);
+    
     border-radius: 10px;
-    height: 50px;
+    height: 40px;
     padding: 25px;
     width: 250px;
     align-items: center;
@@ -108,6 +109,7 @@ form .field-group .field + .field{
     cursor: pointer;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 form button{
@@ -119,7 +121,7 @@ form button{
     font-weight: bold;
     font-size: 20px;
     border: 0;
-    margin-top: 20px;
+    margin-top: 30px;
     transition: 500ms;
     margin-left: 50%;
     transform: translate(-30%);
@@ -129,3 +131,7 @@ form button{
     background-color:#e3ab28;
     cursor: pointer;
   }
+
+.selected{
+    border: 2px solid var(--third-color);
+}

@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/create.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <title>Doe Mídias</title>
 </head>
 <body>
@@ -19,12 +20,12 @@
                 <!--<h2 class="logo">media<span>Donate</span></h2>-->
 
                 <a href="./index.html">
-                    <span>&#9194;</span> Voltar para home
+                    <span>&#9194;</span> Voltar
                 </a>
             </header>
 
 
-            <form action="">
+            <form action="#">
                 <h1>Cadastro do ponto de doação</h1>
 
                 <fieldset>
@@ -44,7 +45,7 @@
                         </div>
 
                         <div class="field">
-                            <label for="address2">Complemento</label>
+                            <label for="address2">Número</label>
                             <input type="text" name="address2">
                         </div>
                     </div>
@@ -70,12 +71,12 @@
 
                 <fieldset>
                     <legend>
-                        <h2>Itens quie deseja doar</h2>
+                        <h2>Itens que deseja doar</h2>
                     </legend>
                     <div class="grid-items">
 
                         <li id="li1">
-                            <span>Dvs's</span>
+                            Cd/Dvd
                         </li>
 
                         <li id="li2">
@@ -87,15 +88,25 @@
                         </li>
 
                         <li id="li4">
-                            <span>Aparelhos</span>
+                            Aparelhos
                         </li>
                     </div>
                     <input type="hidden" name="items">
                 </fieldset>
 
-                <button type="submit">Cadastrar Ponto</button>
+                <button type="submit" id="btnCreateItem">Cadastrar Ponto</button>
             </form>
     </div>
 
+    <div class="modal hide">
+        <div class="content">
+            <h3>Dados cadastrados com sucesso!</h3>
+            <button id="btnModalClose">Concluir</button>
+        </div>
+    </div>
+
+
+    <script src="./scripts/create.js"></script>
+    <script src="./scripts/modal.js"></script>
 </body>
 </html>

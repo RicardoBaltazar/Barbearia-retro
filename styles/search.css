@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #627ea6;
+    --second-color: #55d3d2;
+    --third-color: #ffc505;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    /*background-color: #ffffff;*/
+    background: var(--second-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+    font-family: 'roboto' , sans-serif;
+}
+
+.logo{
+    font-size: 20px;
+    
+}
+header span{
+    color: var(--third-color);
+}
+header h2{
+    display: flex;
+}
+
+.page-search{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-search header{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-search header a{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    font-size: 20px;
+    outline: 0;
+}
+
+.page-search header a:hover{
+    color: #e3ab28;
+    transition: 150ms;
+}
+
+.page-search header span {
+    color: var(--third-color);
+    margin-right: 16px;
+    display: flex;
+}
+
+.div-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+fieldset{
+    border: 0;
+}
+
+fieldset legend{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.div-search select{
+    margin: 25px 30px;
+    font-size: 22px;
+    outline: 0;
+    border: 0;
+    padding: 5px 20px;
+}
