@@ -7,15 +7,15 @@
 //nodemon server.js
 const express = require('express')
 const server = express()
-let bodyParser = require('body-parser')
+const bodyParser = require('body-parser')
 
 server.use(express.static('../public'));
 
-//server.use(bodyParser.urlencoded({extended: true}))
+server.use(bodyParser.urlencoded({extended: true}))
 
 
 //habilitar o uso do req.body na nossa aplicação
-server.use(express.urlencoded({extended: true}))
+//server.use(express.urlencoded({extended: true}))
 
 
 
@@ -32,7 +32,8 @@ server.get('/create', function(req, res){
 
 server.post("/savepoint", function(req,res){
     //req.body: o corpo do nosso formulário
-    console.log(req.body)
+    console.log('Post enviado')
+    res.send(req.body)
 })
 
 
