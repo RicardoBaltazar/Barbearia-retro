@@ -1,0 +1,23 @@
+{
+  "name": "Doa-o-Midias",
+  "version": "1.0.0",
+  "description": "lista de aplicações web. efeitos, jogos, formulários, sites diversos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoBaltazar/Doa-o-Midias.git"
+  },
+  "keywords": [],
+  "author": "Ricardo Baltazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoBaltazar/Doa-o-Midias/issues"
+  },
+  "homepage": "https://github.com/RicardoBaltazar/Doa-o-Midias#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
