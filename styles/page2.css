@@ -39,7 +39,7 @@ main .title{
     margin-bottom: 10px;
 }
 
-.services div img:hover{
+.services div:hover{
     cursor: pointer;
 }
 
