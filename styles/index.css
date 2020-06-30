@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 200px;
+    margin-top: -25px;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    background-color: #542E15;
+}
