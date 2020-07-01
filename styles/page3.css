@@ -1,0 +1,43 @@
+.page3 .content {
+    width: 90%;
+    /*max-width: 1100px;*/
+    height: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+}
+
+main .title{
+    color: white;
+    margin: -20px 0px 40px 0px;
+}
+
+.lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+li {
+    color: black;
+    list-style-type: none;
+    background-color: white;
+    padding: 25px 100px 25px 100px;
+    font-size: 22px;
+    text-align: center;
+}
+
+li:hover{
+    cursor: pointer;
+}

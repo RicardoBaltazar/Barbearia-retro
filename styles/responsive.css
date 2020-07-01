@@ -1,3 +1,9 @@
+@media(max-width: 768px){
+    li{
+        padding: 25px 75px 25px 75px;
+    }
+}
+
 @media(max-width: 425px){
     main{
         text-align: left;
@@ -16,4 +22,40 @@
         padding-right: 50px;
     }
 
+    .lists{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        margin: 10px;
+        padding: 25px 150px 25px 150px;
+    }
+
+    .li1{
+        padding: 25px 156px 25px 156px;
+
+    }
+}
+
+@media(max-width: 375px){
+    li{
+        margin: 10px;
+        padding: 25px 130px 25px 130px;
+    }
+
+    .li1{
+        padding: 25px 136px 25px 136px;
+    }
+}
+
+@media(max-width: 320px){
+    li{
+        margin: 10px;
+        padding: 25px 110px 25px 110px;
+    }
+
+    .li1{
+        padding: 25px 116px 25px 116px;
+    }
 }
