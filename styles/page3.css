@@ -10,12 +10,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
+    margin-top: -50px;
 }
 
 main .title{
     color: white;
-    margin: -20px 0px 40px 0px;
+    margin: -20px 0px 30px 0px;
 }
 
 .lists {
@@ -33,11 +33,27 @@ li {
     color: black;
     list-style-type: none;
     background-color: white;
-    padding: 25px 100px 25px 100px;
+    padding: 20px 100px 20px 100px;
     font-size: 22px;
     text-align: center;
 }
 
 li:hover{
     cursor: pointer;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+form input {
+    padding: 5px 5px 5px 5px;
+}
+
+.btn{
+    background-color: white;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
 }
