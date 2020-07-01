@@ -5,4 +5,15 @@
     main button {
         margin-bottom: 50px;
     }
+
+    main div{
+        flex-wrap: wrap;
+    }
+
+    main div #div-hair{
+        margin-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
 }
