@@ -36,6 +36,15 @@
         padding: 25px 156px 25px 156px;
 
     }
+
+    .btn{
+        width: 250px;
+    }
+
+    .modal{
+        height: 120vh;
+    }
+    
 }
 
 @media(max-width: 375px){

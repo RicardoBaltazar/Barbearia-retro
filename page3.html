@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./styles/responsive.css">
     <title>Barbearia Retrô</title>
 </head>
+
 <body>
     <div class="page2">
         <div class="content">
@@ -36,11 +38,22 @@
                 <div class="modal">
                     <div class="form">
                         <form action="">
-                            <input type="text" name="" id="name" placeholder="Nome">
-                            <input type="submit" value="Agendar" class="btn" id="btn">
+                            <label for="name">Digite seu nome</label>
+                            <input type="text" name="" id="name" placeholder="Nome" required>
+                            <label for="fone">Digite o número de telefone</label>
+                            <input type="text" name="fone" id="fone" placeholder="telefone" required>
+
+                            <div class="buttons">
+                                <input type="button" value="voltar" class="btn" id="btnCloseModal">
+                                <input type="button" value="Agendar" class="btn" id="btnAgend">
+                            </div>
+                            <div class="confirmDates" id="confirmDates">
+                                <p id="confirmName">Nome: </p>
+                                <p id="confirmFone">Telefone: </p>
+                                <input type="button" value="Confirmar" class="btn" id="buttonConfirmDates">
+                            </div>
                         </form>
                     </div>
-
                 </div>
 
             </main>
@@ -50,4 +63,5 @@
 
     <script src="./scripts/page3.js"></script>
 </body>
+
 </html>

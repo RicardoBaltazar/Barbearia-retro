@@ -1,8 +1,19 @@
+var clientName = document.querySelector('#name')
+var clientFone = document.querySelector('#fone')
+var confirmName = document.querySelector('#confirmName')
+var confirmFone = document.querySelector('#confirmFone')
 var modal = document.querySelector('.modal')
-modal.style.display = 'none'
-var hour = 'horas'
 var form = document.querySelector('form')
+var confirmDates = document.querySelector('#confirmDates')
+var buttonAgend = document.querySelector('#btnAgend')
+var buttonConfirmDates = document.querySelector('#buttonConfirmDates')
+var hour = ''
 
+
+modal.style.display = 'none'
+confirmDates.style.display = 'none'
+
+//clicando no li
 document.querySelector('#li9').addEventListener('click', function(){
     hour = '9 horas'
     console.log(hour)
@@ -15,6 +26,31 @@ document.querySelector('#li9').addEventListener('click', function(){
 
 })
 
+
+//agendar
+buttonAgend.addEventListener('click', function(){
+    confirmDates.style.display = 'block'
+    confirmName.innerHTML += clientName.value
+    confirmFone.innerHTML += clientFone.value
+})
+
+//confirmar
+buttonConfirmDates.addEventListener('click', function(){
+    modal.style.display = 'none'
+})
+
+//close modal
+var buttonCloseModal = document.querySelector('#btnCloseModal')
+buttonCloseModal.addEventListener('click', function(){
+    modal.style.display = 'none'
+
+    li9.style.backgroundColor = 'white'
+    li9.innerHTML = '9 horas'
+
+}) 
+
+
+/*
 form.addEventListener('submit', function(e){
     e.preventDefault()
     
@@ -43,5 +79,5 @@ form.addEventListener('submit', function(e){
         modal.style.display = 'none'
 })
 
-
+*/
 
