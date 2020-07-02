@@ -51,6 +51,7 @@ form{
 
 form input {
     padding: 5px 5px 5px 5px;
+    margin-top: 5px;
 }
 
 .btn{
@@ -109,3 +110,7 @@ form input {
     transition: 600ms;
 }
 
+.reserved{
+    background-color: grey;
+    
+}

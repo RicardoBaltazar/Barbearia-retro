@@ -9,60 +9,139 @@ var buttonAgend = document.querySelector('#btnAgend')
 var buttonConfirmDates = document.querySelector('#buttonConfirmDates')
 var hour = ''
 
-
 modal.style.display = 'none'
 confirmDates.style.display = 'none'
 
-//clicando no li
-document.querySelector('#li9').addEventListener('click', function(){
+var lists =  document.querySelector('.lists')
+for(var itens in lists){
+    console.log(itens)
+}
+/*
+document.querySelector('#li9').addEventListener('click', function () {
     hour = '9 horas'
     console.log(hour)
-
-    let li9 = document.querySelector('#li9')    
-    li9.style.backgroundColor = 'grey'
+    let li9 = document.querySelector('#li9')
+    li9.classList.toggle('reserved')
+    //li9.style.backgroundColor = 'grey'
     li9.innerHTML = 'reservado'
-
     modal.style.display = 'block'
-
 })
 
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
+
+document.querySelector('#li10').addEventListener('click', function () {
+    hour = '10 horas'
+    console.log(hour)
+    let li10 = document.querySelector('#li10')
+    li10.style.backgroundColor = 'grey'
+    li10.innerHTML = 'reservado'
+    modal.style.display = 'block'
+})
 
 //agendar
-buttonAgend.addEventListener('click', function(){
+buttonAgend.addEventListener('click', function () {
     confirmDates.style.display = 'block'
-    confirmName.innerHTML += clientName.value
-    confirmFone.innerHTML += clientFone.value
+    confirmName.innerHTML = "Nome: " + clientName.value
+    confirmFone.innerHTML = "Telefone: " +  clientFone.value
 })
 
 //confirmar
-buttonConfirmDates.addEventListener('click', function(){
-    modal.style.display = 'none'
-})
-
-//close modal
-var buttonCloseModal = document.querySelector('#btnCloseModal')
-buttonCloseModal.addEventListener('click', function(){
-    modal.style.display = 'none'
-
-    li9.style.backgroundColor = 'white'
-    li9.innerHTML = '9 horas'
-
-}) 
-
-
-/*
-form.addEventListener('submit', function(e){
-    e.preventDefault()
-    
-    var name = document.querySelector('#name')
-
+buttonConfirmDates.addEventListener('click', function () {
 
     let body = {
-        "Nome": name.value,
+        "Nome": clientName.value,
         "horario": hour,
-        "telefone": '9556521'
+        "telefone": clientFone.value
     }
-    
+
     fetch('http://localhost:8000/horario', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -76,8 +155,19 @@ form.addEventListener('submit', function(e){
         })
         .catch(error => console.error('Error:', error))
 
-        modal.style.display = 'none'
+confirmDates.style.display = 'none'
+modal.style.display = 'none'
+clientName.value = ''
+clientFone.value = ''
+})
+
+//fechar modal
+var buttonCloseModal = document.querySelector('#btnCloseModal')
+buttonCloseModal.addEventListener('click', function () {
+    modal.style.display = 'none'
+
+    li9.style.backgroundColor = 'white'
+    li9.innerHTML = '9 horas'
 })
 
 */
-
