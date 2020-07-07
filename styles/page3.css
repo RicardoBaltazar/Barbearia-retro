@@ -112,5 +112,8 @@ form input {
 
 .reserved{
     background-color: grey;
-    
+}
+
+.reserved:before{
+    content: 'Reservado'
 }
