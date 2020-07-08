@@ -5,10 +5,20 @@ var divBeard = document.querySelector('#div-beard')
 
 divHair.addEventListener('click', function(){
     divHair.classList.toggle('selected')
-    sessionStorage.setItem('Cabelo', 'Cabelo')
+
+    if(divHair.classList === 'selected'){
+        sessionStorage.setItem('Cabelo', 'Cabelo')
+    } else {
+        sessionStorage.setItem('Cabelo', '')
+    }
 })
 
 divBeard.addEventListener('click', function(){
     divBeard.classList.toggle('selected')
-    sessionStorage.setItem('Barba', 'Barba')
+
+    if(divHair.classList = 'selected'){
+        sessionStorage.setItem('Barba', 'Barba')
+    } else {
+        sessionStorage.setItem('Barba', '')
+    }
 })

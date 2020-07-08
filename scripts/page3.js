@@ -9,6 +9,9 @@ var hour = ''
 var hair = sessionStorage.getItem('Cabelo');
 var beard = sessionStorage.getItem('Barba');
 
+modal.style.display = 'none'
+modalConfirm.style.display = 'none'
+
 if(hair === null){
     hair = ''
 }
@@ -18,12 +21,21 @@ if(beard === null){
 var totalValue = hair + ' ' + beard
 console.log(totalValue)
 
-//esconder o modal 
-modal.style.display = 'none'
-//esconder o modal de confirmação
-modalConfirm.style.display = 'none'
+li.addEventListener("click", function (event) {
+    setEventTarget()
+    setHourValue()
+    backgroundColorItem()
+    buttonAgend.addEventListener('click', function(){
+        showModalConfirm()
+    })
+    buttonAgend.addEventListener('click', postApi)
+    showModal()
+    buttonCloseModal.addEventListener('click',function(){
+        closeModal()
+        event.target.classList.remove('reserved') //remover clase clicando em voltar 
+    })
+})
 
-//funções
 function setEventTarget(){
     console.log(event.target); // este é o elemento clicado
     console.log(event.target.value) //este é o valor do elemento clicado
@@ -69,23 +81,6 @@ function postApi() {
         clientName.value = ''
         clientFone.value = ''
 }
-
-//evento de clique no iten da lista chamando as funções
-li.addEventListener("click", function (event) {
-    setEventTarget()
-    setHourValue()
-    backgroundColorItem()
-    buttonAgend.addEventListener('click', function(){
-        showModalConfirm()
-    })
-    buttonAgend.addEventListener('click', postApi)
-    showModal()
-    buttonCloseModal.addEventListener('click',function(){
-        closeModal()
-        event.target.classList.remove('reserved') //remover clase clicando em voltar 
-    })
-})
-
 
 function showModalConfirm(){
     modalConfirm.style.display = 'block'
