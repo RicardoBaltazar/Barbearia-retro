@@ -1,21 +1,29 @@
 # Barbearia Reatrô  
   
-##  Projeto  
-Aplicação feita para cliente realizarem agendamentos e para os serviços da barbearia, como cortar o cabelo e fazer a barba.  
+### Projeto  
+Aplicação feita para cliente realizarem agendamentos e para os serviços da barbearia.  
+O cliente pode escolher o tipo de serviço e escolher um horário para realizar o agendamento.  
   
-* O cliente pode escolher entre os serviços que a barbearia disponibiliza    
-* O cliente pode escolher o melhor horário para agendar o atendimento  
+Tecnologias utilizadas  
+Html, Css, Javascript, Json Server.  
+  
+Demo do projeto https://ricardobaltazar.github.io/Barbearia-retro-javascript/index.html  
   
 ![barberResponsive](https://user-images.githubusercontent.com/56805229/86974869-70f57b00-c14d-11ea-80da-311d09c88fd3.gif)  
 ![barber](https://user-images.githubusercontent.com/56805229/86974901-8074c400-c14d-11ea-981a-3469990fceed.gif)  
-
-
   
-## Tecnologias  
-* Html  
-* Css  
-* Javascript  
-* Json Server
+### Json Server  
+Você precisa ter o npm instalado em sua maquina para poder instalar o json Server.  
+Baixe o node e no terminal digite ```npm install```  
+Crie uma pasta no seu computador, abra o terminal nela e digite ``` npm install -g json-server ```  
+Crie a pasta do seu projeto e nela crie um arquivo chamado db.json. dentro desse arquivo crie uma estrutura json, exemplo:  
+```
+{
+  "exemplo": []
+}
+```  
+Na pasta onde esta o arquivo db.json abra o terminal i digite ``` json-server --watch db.json --port 8000```  
+Link da API ```http://localhost:8000/exemplo```
   
 Criei uma API com json server para manipular os dados do cliente. 
 ```  
@@ -37,7 +45,7 @@ Criei uma API com json server para manipular os dados do cliente.
 ]  
 ```  
 
-## :smile: Como contribuir  
+### Como contribuir  
   
 * Faça um fork desse repositório;  
 * Crie sua feature branch: ```git checkout -b my-new-feature```  
@@ -48,21 +56,5 @@ Criei uma API com json server para manipular os dados do cliente.
   
 * Adicione um título e uma descrição que deixe claro sua sugestão :v:  
   
-## :ballot_box_with_check: Inicialização  
-Primeiramente você precisa ter o npm instalado.  
-```$ npm install```  
-
-Voçe precisa instalar e inicializar o json server para guardar os dados.  
-* Primeiro instale o json server. Abra o terminal na pasta do preferencia onde deseja guardar a configuração e digite o comando ``` npm install -g json-server ```  
-* Crie um arquivo chamado db.json na pasta do seu projeto.  
-* crie a estrutura do arquivo json para receber os dados.  
-```
-{
-  "exemplo": []
-}
-```  
-* Vá até a pasta do projeto onde esta o arquivo db.json, abra o terminal e digite o comando ``` json-server --watch db.json --port 8000``` e inicie o json server na porta 8000  
-* Acesse ```http://localhost:8000/exemplo``` 
-  
-## :memo: Licença  
+### Licença  
 [MIT license](https://github.com/RicardoBaltazar/Barbearia-retro-javascript/blob/master/LICENSE)  
