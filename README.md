@@ -1,15 +1,13 @@
 # Barbearia Reatrô  
+### Aplicação feita para clientes realizarem agendamentos de horários dos serviços de barbearia, como corte de cabelo, barba
   
 ##  Projeto  
 É uma aplicação criada para realizar cadastros de horários e serviços da barbearia.  
   
-## Tecnologias  
-* [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
-* [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
-* [Javascript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)  
+##
   
   
-  
+Criei uma API com json server para manipular os dados do cliente. 
 ```  
 [
   {
