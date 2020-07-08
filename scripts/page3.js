@@ -1,4 +1,3 @@
-
 //variaveis
 var clientName = document.querySelector('#name')
 var clientFone = document.querySelector('#fone')
@@ -57,13 +56,18 @@ function postApi() {
         .catch(error => console.error('Error:', error))
         
         modal.style.display = 'none' //esconder o modal ao fazer post
+        clientName.value = ''
+        clientFone.value = ''
 }
 
-//evento de clique no iten da lista
+//evento de clique no iten da lista chamando as funções
 li.addEventListener("click", function (event) {
     setEventTarget()
     setHourValue()
     backgroundColorItem()
+    buttonAgend.addEventListener('click', function(){
+        showModalConfirm()
+    })
     buttonAgend.addEventListener('click', postApi)
     showModal()
     buttonCloseModal.addEventListener('click',function(){
@@ -72,6 +76,16 @@ li.addEventListener("click", function (event) {
     })
 })
 
+
+function showModalConfirm(){
+    modalConfirm.style.display = 'block'
+    document.querySelector('#pname').innerHTML = 'Nome: ' + clientName.value
+    document.querySelector('#pphone').innerHTML = 'Telefone: ' + clientFone.value
+    document.querySelector('#ptime').innerHTML = 'Horário: ' + hour + ' Horas' 
+    setTimeout(function(){
+        modalConfirm.style.display = 'none'
+    }, 3000)
+}
 
 
 

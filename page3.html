@@ -39,9 +39,9 @@
                     <div class="form">
                         <form action="">
                             <label for="name">Digite seu nome</label>
-                            <input type="text" name="" id="name" placeholder="Nome" required>
+                            <input type="text" name="" id="name" placeholder="Nome">
                             <label for="fone">Digite o número de telefone</label>
-                            <input type="text" name="fone" id="fone" placeholder="telefone" required>
+                            <input type="text" name="fone" id="fone" placeholder="telefone">
 
                             <div class="buttons">
                                 <input type="button" value="voltar" class="btn" id="btnCloseModal">
@@ -52,11 +52,13 @@
                 </div>
 
                 <div class="modal-confirm">
-                    <h2>Cadastrado</h2>
-                    <p>Name: </p>
-                    <p>Telefone:</p>
-                    <p>Horario: </p>
-                    <p>Valor: </p>
+                    <div class="modal-confirm-dates">
+                        <h2>Dados Cadastrados!</h2>
+                        <p id="pname"></p>
+                        <p id="pphone"></p>
+                        <p id="ptime"></p>
+                        <p id="pvalue"></p>
+                    </div>
                 </div>
 
             </main>
@@ -66,5 +68,4 @@
 
     <script src="./scripts/page3.js"></script>
 </body>
-
 </html>
