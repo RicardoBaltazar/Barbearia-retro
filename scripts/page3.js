@@ -1,4 +1,3 @@
-//variaveis
 var clientName = document.querySelector('#name')
 var clientFone = document.querySelector('#fone')
 var modal = document.querySelector('.modal')
@@ -7,6 +6,17 @@ var buttonAgend = document.querySelector('#btnAgend')
 var buttonCloseModal = document.querySelector('#btnCloseModal')
 var li = document.querySelector(".lists");
 var hour = ''
+var hair = sessionStorage.getItem('Cabelo');
+var beard = sessionStorage.getItem('Barba');
+
+if(hair === null){
+    hair = ''
+}
+if(beard === null){
+    beard = ''
+}
+var totalValue = hair + ' ' + beard
+console.log(totalValue)
 
 //esconder o modal 
 modal.style.display = 'none'
@@ -82,9 +92,10 @@ function showModalConfirm(){
     document.querySelector('#pname').innerHTML = 'Nome: ' + clientName.value
     document.querySelector('#pphone').innerHTML = 'Telefone: ' + clientFone.value
     document.querySelector('#ptime').innerHTML = 'Horário: ' + hour + ' Horas' 
+    document.querySelector('#pservice').innerHTML = 'Serviço: ' + totalValue
     setTimeout(function(){
         modalConfirm.style.display = 'none'
-    }, 3000)
+    }, 5000)
 }
 
 
