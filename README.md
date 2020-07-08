@@ -3,13 +3,15 @@
 ##  Projeto  
 Aplicação feita para cliente realizarem agendamentos e para os serviços da barbearia, como cortar o cabelo e fazer a barba.  
   
-Criado utilizando as tecnologias HTML, CSS, JAVASCRIPT.  
-é uma aplicação front-end que consome dados de uma API REST falsa criada com Json Server, também utilizei o localstorage para gravar alguns dados no browser.  
+* O cliente pode escolher entre os serviços que a barbearia disponibiliza    
+* O cliente pode escolher o melhor horário para agendar o atendimento  
+* Utiliza uma falsa API REST com json Server para guardar os dados do cliente  
+* Aplicação responsiva  
   
-
-  
-##
-  
+## Tecnologias  
+* Html  
+* Css  
+* Javascript
   
 Criei uma API com json server para manipular os dados do cliente. 
 ```  
