@@ -1,4 +1,4 @@
-# Barbearia Reatrô  
+# Barbearia Retrô  
   
 ### Projeto  
 Aplicação feita para cliente realizarem agendamentos e para os serviços da barbearia.  
