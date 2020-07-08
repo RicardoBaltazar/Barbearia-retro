@@ -44,17 +44,17 @@
 Primeiramente você precisa ter o npm instalado.  
 ```$ npm install```  
 
-Voçe precisa instalar e inicializar o json server para guardar os dados cadastrados.   
-* Primeiro instale o json server. Abra o terminal na pasta do projeto e digite o comando ``` npm install -g json-server ```  
+Voçe precisa instalar e inicializar o json server para guardar os dados.  
+* Primeiro instale o json server. Abra o terminal na pasta do preferencia onde deseja guardar a configuração e digite o comando ``` npm install -g json-server ```  
 * Crie um arquivo chamado db.json na pasta do seu projeto.  
 * crie a estrutura do arquivo json para receber os dados.  
 ```
 {
-  "produtos": []
+  "exemplo": []
 }
 ```  
 * Vá até a pasta do projeto onde esta o arquivo db.json, abra o terminal e digite o comando ``` json-server --watch db.json --port 8000``` e inicie o json server na porta 8000  
-* Acesse ```http://localhost:8000/produtos``` 
+* Acesse ```http://localhost:8000/exemplo``` 
   
 ## :memo: Licença  
 [MIT license](https://github.com/RicardoBaltazar/Barbearia-retro-javascript/blob/master/LICENSE)  
