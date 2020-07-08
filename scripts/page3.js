@@ -61,7 +61,8 @@ function postApi() {
     let body = {
         "Nome": clientName.value,
         "horario": hour + ' Horas',
-        "telefone": clientFone.value
+        "telefone": clientFone.value,
+        'Serviço': totalValue
     }
 
     fetch('http://localhost:8000/horario', {
