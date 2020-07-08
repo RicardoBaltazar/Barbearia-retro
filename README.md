@@ -5,13 +5,17 @@ Aplicação feita para cliente realizarem agendamentos e para os serviços da ba
   
 * O cliente pode escolher entre os serviços que a barbearia disponibiliza    
 * O cliente pode escolher o melhor horário para agendar o atendimento  
-* Utiliza uma falsa API REST com json Server para guardar os dados do cliente  
-* Aplicação responsiva  
+  
+![barberResponsive](https://user-images.githubusercontent.com/56805229/86974869-70f57b00-c14d-11ea-80da-311d09c88fd3.gif)  
+![barber](https://user-images.githubusercontent.com/56805229/86974901-8074c400-c14d-11ea-981a-3469990fceed.gif)  
+
+
   
 ## Tecnologias  
 * Html  
 * Css  
-* Javascript
+* Javascript  
+* Json Server
   
 Criei uma API com json server para manipular os dados do cliente. 
 ```  
