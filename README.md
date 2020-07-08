@@ -11,21 +11,6 @@ Demo do projeto https://ricardobaltazar.github.io/Barbearia-retro-javascript/ind
   
 ![barberResponsive](https://user-images.githubusercontent.com/56805229/86974869-70f57b00-c14d-11ea-80da-311d09c88fd3.gif)  
 ![barber](https://user-images.githubusercontent.com/56805229/86974901-8074c400-c14d-11ea-981a-3469990fceed.gif)  
-  
-### Json Server  
-Você precisa ter o npm instalado em sua maquina para poder instalar o json Server.  
-Baixe o node e no terminal digite ```npm install```  
-Crie uma pasta no seu computador, abra o terminal nela e digite ``` npm install -g json-server ```  
-Crie a pasta do seu projeto e nela crie um arquivo chamado db.json. dentro desse arquivo crie uma estrutura json, exemplo:  
-```
-{
-  "exemplo": []
-}
-```  
-Na pasta onde esta o arquivo db.json abra o terminal i digite ``` json-server --watch db.json --port 8000```  
-Link da API ```http://localhost:8000/exemplo```
-  
-Criei uma API com json server para manipular os dados do cliente. 
 ```  
 [
   {
@@ -44,7 +29,20 @@ Criei uma API com json server para manipular os dados do cliente.
   }
 ]  
 ```  
-
+  
+### Json Server  
+Você precisa ter o npm instalado em sua maquina para poder instalar o json Server.  
+Baixe o node e no terminal digite ```npm install```  
+Crie uma pasta no seu computador, abra o terminal nela e digite ``` npm install -g json-server ```  
+Crie a pasta do seu projeto e nela crie um arquivo chamado db.json. dentro desse arquivo crie uma estrutura json, exemplo:  
+```
+{
+  "exemplo": []
+}
+```  
+Na pasta onde esta o arquivo db.json abra o terminal i digite ``` json-server --watch db.json --port 8000```  
+Link da API ```http://localhost:8000/exemplo```
+  
 ### Como contribuir  
   
 * Faça um fork desse repositório;  
