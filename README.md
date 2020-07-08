@@ -1,3 +1,15 @@
+# Barbearia Reatrô  
+  
+##  Projeto  
+É uma aplicação criada para realizar cadastros de horários e serviços da barbearia.  
+  
+## Tecnologias  
+* [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
+* [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
+* [Javascript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)  
+  
+  
+  
 ```  
 [
   {
